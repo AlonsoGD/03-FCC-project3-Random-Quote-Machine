@@ -1,0 +1,19 @@
+body {
+    /*background-color: #202020; */
+    background-color: white;
+}
+
+.screen {
+    color: white;
+    background-color: #024A07;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    width: 1000px;
+    height: 600px;
+    margin-left: -500px;
+    margin-top: -300px;
+    border: 10px solid #393737;
+    border-radius: 40px;
+
+}
