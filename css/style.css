@@ -1,19 +1,38 @@
 body {
-    /*background-color: #202020; */
-    background-color: white;
+    background-color: #0A0A0A;
+    font-family: 'VT323', monospace;
+    font-size: 30px;
 }
+.pccase {
+    background-color: #717070;
 
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    width: 1150px;
+    height: 750px;
+    margin-left: -575px;
+    margin-top: -375px;
+
+    border: 10px solid #3D3B3B;
+    border-radius: 10px;
+}
 .screen {
     color: white;
     background-color: #024A07;
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    width: 1000px;
-    height: 600px;
-    margin-left: -500px;
-    margin-top: -300px;
-    border: 10px solid #393737;
-    border-radius: 40px;
+
+    position: relative;
+    width: 1050px;
+    height: 650px;
+    margin-left: 40px;
+    margin-top: 40px;
+
+    border: 3px solid #222121;
+    border-radius: 20px;
+}
+.screentext {
+    color: #00FE1A;
+    margin-left: 30px;
+    margin-top: 20px;
 
 }
