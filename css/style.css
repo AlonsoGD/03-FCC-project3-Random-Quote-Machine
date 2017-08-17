@@ -34,5 +34,15 @@ body {
     color: #00FE1A;
     margin-left: 30px;
     margin-top: 20px;
+}
+input {
+    background-color: #024A07;
+    position: relative;
+    width: 75%;
+    left: -20px;
+    border-width: 0px;
+    border-style: none;
+    border-color: none;
+    border-image: none;
 
 }
