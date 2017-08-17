@@ -1,49 +1,56 @@
-$screencolor: #024A07;
+$screenColor: #024A07;
+$pccaseWidth: 700px;
+$pccaseHeight: 600px;
 
 body {
     background-color: #161212;
     font-family: 'VT323', monospace;
-    font-size: 21pt;
+    font-size: 15pt;
 }
 .pccase {
     background-color: #717070;
 
     position: absolute;
     left: 50%;
-    top: 45%;
-    width: 1150px;
-    height: 750px;
-    margin-left: -575px;
-    margin-top: -375px;
+    top: 40%;
+    width: $pccaseWidth;
+    height: $pccaseHeight;
+    margin-left: $pccaseWidth / 2 * (-1);
+    margin-top: $pccaseHeight / 2 * (-1);
 
     border: 10px solid #3D3B3B;
     border-radius: 10px;
 }
 .screen {
     color: white;
-    background-color: $screencolor;
+    background-color: $screenColor;
 
     position: relative;
-    width: 1050px;
-    height: 650px;
+    width: $pccaseWidth - 100px;
+    height: $pccaseHeight - 100px;
     margin-left: 40px;
     margin-top: 40px;
 
     border: 3px solid #222121;
     border-radius: 20px;
-}
-.screentext {
-    color: #00FE1A;
-    margin-left: 30px;
-    margin-top: 20px;
-}
-input {
-    background-color: $screencolor;
-    position: relative;
-    width: 75%;
-    left: -20px;
-    border-style: none;
-    border-color: none;
-    border-image: none;
 
+    .screentext {
+        color: #00FE1A;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    input {
+        background-color: $screenColor;
+        position: relative;
+        width: 75%;
+        left: -20px;
+        border-style: none;
+        border-color: none;
+        border-image: none;
+    
+    }
 }
+
+
+
