@@ -28,28 +28,28 @@ body {
     position: relative;
     width: $pccaseWidth - 100px;
     height: $pccaseHeight - 100px;
-    margin-left: 40px;
-    margin-top: 40px;
+    margin: 40px;
 
     border: 3px solid #222121;
     border-radius: 20px;
 
     .screentext {
         color: #00FE1A;
-        margin-left: 30px;
-        margin-top: 20px;
+        margin: 20px 30px;
     }
 
     input {
         background-color: $screenColor;
         position: relative;
-        width: 75%;
+        width: 83%;
         left: -20px;
         border-style: none;
-        border-color: none;
         border-image: none;
-    
+    }    
+    input:focus {
+        outline: none;
     }
+
 }
 
 
