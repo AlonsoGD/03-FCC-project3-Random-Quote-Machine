@@ -1,18 +1,27 @@
-$screenColor: #024A07;
+$screenColor: #036006;
 $pccaseWidth: 700px;
 $pccaseHeight: 600px;
 
 body {
-    background-color: #161212;
-    font-family: 'VT323', monospace;
+    background-color: #000;
+    font-family: 'VT323';
     font-size: 15pt;
 }
-.pccase {
-    background-color: #717070;
 
-    position: absolute;
+.oldscreeneffect {
+    // Old compute screen effect
+    background: radial-gradient(ellipse at center, #000 50%,$screenColor 100%); /* W3C */
+    background-size: 100% 4px;
+    background-repeat: repeat-y;
+    opacity : 0.9;
+}
+
+.pccase {
+    background: linear-gradient(135deg, #717070 0%, #252424 30%);
+
+    position: fixed;
     left: 50%;
-    top: 40%;
+    top: 45%;
     width: $pccaseWidth;
     height: $pccaseHeight;
     margin-left: $pccaseWidth / 2 * (-1);
@@ -22,35 +31,35 @@ body {
     border-radius: 10px;
 }
 .screen {
-    color: white;
-    background-color: $screenColor;
-
     position: relative;
-    width: $pccaseWidth - 100px;
-    height: $pccaseHeight - 100px;
-    margin: 40px;
+    height: $pccaseHeight - 150px;
+    margin: 35px;
 
     border: 3px solid #222121;
     border-radius: 20px;
+    box-shadow: inset 0px 0px 10px 10px #000;
 
     .screentext {
         color: #00FE1A;
         margin: 20px 30px;
-    }
-
-    input {
-        background-color: $screenColor;
-        position: relative;
-        width: 83%;
-        left: -20px;
-        border-style: none;
-        border-image: none;
-    }    
-    input:focus {
-        outline: none;
-    }
-
+        text-shadow: 0px 0px 10px #FFFFFF;
+        opacity: 0.6; 
+    } 
 }
 
+input {
+    opacity: 1 !important;
+    background-color: transparent;
+    position: relative;
+    width: 83%;
+    left: -20px;
+    bottom: 1px;
+    border-style: none;
+    border-image: none;
+    font-family: 'VT323';
+    font-size: 15pt;
+}
 
-
+input:focus {
+    outline: none;
+}

@@ -1,13 +1,20 @@
 body {
-  background-color: #161212;
-  font-family: 'VT323', monospace;
+  background-color: #000;
+  font-family: 'VT323';
   font-size: 15pt; }
 
+.oldscreeneffect {
+  background: radial-gradient(ellipse at center, #000 50%, #036006 100%);
+  /* W3C */
+  background-size: 100% 4px;
+  background-repeat: repeat-y;
+  opacity: 0.9; }
+
 .pccase {
-  background-color: #717070;
-  position: absolute;
+  background: linear-gradient(135deg, #717070 0%, #252424 30%);
+  position: fixed;
   left: 50%;
-  top: 40%;
+  top: 45%;
   width: 700px;
   height: 600px;
   margin-left: -350px;
@@ -16,25 +23,31 @@ body {
   border-radius: 10px; }
 
 .screen {
-  color: white;
-  background-color: #024A07;
   position: relative;
-  width: 600px;
-  height: 500px;
-  margin: 40px;
+  height: 450px;
+  margin: 35px;
   border: 3px solid #222121;
-  border-radius: 20px; }
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 10px 10px #000; }
   .screen .screentext {
     color: #00FE1A;
-    margin: 20px 30px; }
-  .screen input {
-    background-color: #024A07;
-    position: relative;
-    width: 83%;
-    left: -20px;
-    border-style: none;
-    border-image: none; }
-  .screen input:focus {
-    outline: none; }
+    margin: 20px 30px;
+    text-shadow: 0px 0px 10px #FFFFFF;
+    opacity: 0.6; }
+
+input {
+  opacity: 1 !important;
+  background-color: transparent;
+  position: relative;
+  width: 83%;
+  left: -20px;
+  bottom: 1px;
+  border-style: none;
+  border-image: none;
+  font-family: 'VT323';
+  font-size: 15pt; }
+
+input:focus {
+  outline: none; }
 
 /*# sourceMappingURL=style.css.map */
