@@ -21,12 +21,14 @@ body {
     background: $caseColor;
 
     position: fixed;
-    left: 50%;
-    top: 40%;
+	left: 0;
+	right: 0;
+	top:0;	
+    bottom: 0;
+    
     width: $pccaseWidth;
     height: $pccaseHeight;
-    margin-left: $pccaseWidth / 2 * (-1);
-    margin-top: $pccaseHeight / 2 * (-1);
+    margin: auto;
 
     border: 10px solid #3D3B3B;
     border-radius: 10px;
@@ -37,9 +39,10 @@ body {
     //opacity: 0;
     width: $pccaseWidth + 200px;
     height: $pccaseHeight / 2;
-    
-    //margin-left: $pccaseWidth / 2 * (-1);
-    //margin-top: $pccaseHeight / 2 * (-1);
+
+    //margin-top: 320px;
+    //margin-left: -500px;
+
 }
 
 .screen {

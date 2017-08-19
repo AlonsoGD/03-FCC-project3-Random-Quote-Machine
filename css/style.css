@@ -12,12 +12,13 @@ body {
 .pccase, .pcbase {
   background: linear-gradient(135deg, #717070 0%, #252424 30%);
   position: fixed;
-  left: 50%;
-  top: 40%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   width: 800px;
   height: 600px;
-  margin-left: -400px;
-  margin-top: -300px;
+  margin: auto;
   border: 10px solid #3D3B3B;
   border-radius: 10px; }
 
