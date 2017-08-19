@@ -14,17 +14,18 @@ body {
   position: fixed;
   left: 0;
   right: 0;
-  top: 0;
+  top: -150px;
   bottom: 0;
-  width: 800px;
+  width: 650px;
   height: 600px;
   margin: auto;
   border: 10px solid #3D3B3B;
   border-radius: 10px; }
 
 .pcbase {
-  width: 1000px;
-  height: 300px; }
+  top: 695px;
+  width: 850px;
+  height: 200px; }
 
 .screen {
   height: 450px;

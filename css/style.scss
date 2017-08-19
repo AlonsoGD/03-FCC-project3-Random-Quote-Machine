@@ -1,7 +1,8 @@
 $screenColor: #036006;
 $caseColor: linear-gradient(135deg, #717070 0%, #252424 30%);
-$pccaseWidth: 800px;
+$pccaseWidth: 650px;
 $pccaseHeight: 600px;
+$topcaseposition: -150px;
 
 body {
     background-color: #000;
@@ -23,7 +24,7 @@ body {
     position: fixed;
 	left: 0;
 	right: 0;
-	top:0;	
+	top: $topcaseposition;	
     bottom: 0;
     
     width: $pccaseWidth;
@@ -37,8 +38,10 @@ body {
 .pcbase {
     @extend .pccase;
     //opacity: 0;
+    top: $topcaseposition + ($pccaseHeight * 1.4 + 5);
     width: $pccaseWidth + 200px;
-    height: $pccaseHeight / 2;
+    height: $pccaseHeight / 3;
+
 
     //margin-top: 320px;
     //margin-left: -500px;
