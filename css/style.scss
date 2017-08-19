@@ -1,5 +1,6 @@
 $screenColor: #036006;
-$pccaseWidth: 700px;
+$caseColor: linear-gradient(135deg, #717070 0%, #252424 30%);
+$pccaseWidth: 800px;
 $pccaseHeight: 600px;
 
 body {
@@ -10,18 +11,18 @@ body {
 
 .oldscreeneffect {
     // Old compute screen effect
-    background: radial-gradient(ellipse at center, #000 50%,$screenColor 100%); /* W3C */
+    background: radial-gradient(ellipse at center, #000 50%,$screenColor 100%);
     background-size: 100% 4px;
     background-repeat: repeat-y;
     opacity : 0.9;
 }
 
 .pccase {
-    background: linear-gradient(135deg, #717070 0%, #252424 30%);
+    background: $caseColor;
 
     position: fixed;
     left: 50%;
-    top: 45%;
+    top: 40%;
     width: $pccaseWidth;
     height: $pccaseHeight;
     margin-left: $pccaseWidth / 2 * (-1);
@@ -30,8 +31,18 @@ body {
     border: 10px solid #3D3B3B;
     border-radius: 10px;
 }
+
+.pcbase {
+    @extend .pccase;
+    //opacity: 0;
+    width: $pccaseWidth + 200px;
+    height: $pccaseHeight / 2;
+    
+    //margin-left: $pccaseWidth / 2 * (-1);
+    //margin-top: $pccaseHeight / 2 * (-1);
+}
+
 .screen {
-    position: relative;
     height: $pccaseHeight - 150px;
     margin: 35px;
 

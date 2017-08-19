@@ -5,25 +5,27 @@ body {
 
 .oldscreeneffect {
   background: radial-gradient(ellipse at center, #000 50%, #036006 100%);
-  /* W3C */
   background-size: 100% 4px;
   background-repeat: repeat-y;
   opacity: 0.9; }
 
-.pccase {
+.pccase, .pcbase {
   background: linear-gradient(135deg, #717070 0%, #252424 30%);
   position: fixed;
   left: 50%;
-  top: 45%;
-  width: 700px;
+  top: 40%;
+  width: 800px;
   height: 600px;
-  margin-left: -350px;
+  margin-left: -400px;
   margin-top: -300px;
   border: 10px solid #3D3B3B;
   border-radius: 10px; }
 
+.pcbase {
+  width: 1000px;
+  height: 300px; }
+
 .screen {
-  position: relative;
   height: 450px;
   margin: 35px;
   border: 3px solid #222121;
