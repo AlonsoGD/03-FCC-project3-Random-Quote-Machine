@@ -1,17 +1,17 @@
-$screenColor: #036006;
-$caseColor: linear-gradient(135deg, #717070 0%, #252424 30%);
+$screenColor: #003D02;
+$caseColor: #B6B6B6;
 $pccaseWidth: 650px;
 $pccaseHeight: 600px;
-$topcaseposition: -150px;
+$topcaseposition: -120px;
 
 body {
-    background-color: #000;
+    background: #000;
     font-family: 'VT323';
     font-size: 15pt;
 }
 
+// Old computer screen effect
 .oldscreeneffect {
-    // Old compute screen effect
     background: radial-gradient(ellipse at center, #000 50%,$screenColor 100%);
     background-size: 100% 4px;
     background-repeat: repeat-y;
@@ -20,32 +20,67 @@ body {
 
 .pccase {
     background: $caseColor;
-
     position: fixed;
 	left: 0;
 	right: 0;
 	top: $topcaseposition;	
     bottom: 0;
-    
     width: $pccaseWidth;
     height: $pccaseHeight;
     margin: auto;
-
-    border: 10px solid #3D3B3B;
-    border-radius: 10px;
+    border: 5px solid #3D3B3B;
+    box-shadow: 0px 0px 0px 10px $caseColor;
+    border-radius: 5px;
 }
 
-.pcbase {
+.cpu {
     @extend .pccase;
-    //opacity: 0;
-    top: $topcaseposition + ($pccaseHeight * 1.4 + 5);
+    top: $topcaseposition + 840px;
     width: $pccaseWidth + 200px;
-    height: $pccaseHeight / 3;
+    height: $pccaseHeight / 3.5;
+    border-radius: 3px;
+    border: 5px solid #3D3B3B;
+    box-shadow: 0px 0px 0px 9px $caseColor;
+    border-radius: 1px;
 
 
-    //margin-top: 320px;
-    //margin-left: -500px;
+    .pcbaseleft {
+        float: left;
+        width: ($pccaseWidth + 200px) / 2;
+        height: ($pccaseHeight / 3.5);
+    }
+    .pcbaseright {
+        @extend .pcbaseleft;
+        float: right;
+    }
 
+    .disquette {
+        background-color: #3E3D3D;
+        width: 390px;
+        height: 65px;
+        margin: auto;
+        margin-top: 7px;
+        border: 5px solid #848484;
+        border-radius: 7px;
+        
+        .disqueteline {
+            background-color: black;
+            width: 370px;
+            height: 10px;
+            margin: auto;
+            margin-top: 30px;
+        }
+        
+        .disquetesquare {
+            background-color: #111111;
+            width: 80px;
+            height: 55px;
+            margin: auto;
+            margin-top: -35px;
+            opacity: 0.5;
+            border-radius: 10px;
+        }
+    }
 }
 
 .screen {
@@ -60,10 +95,11 @@ body {
         color: #00FE1A;
         margin: 20px 30px;
         text-shadow: 0px 0px 10px #FFFFFF;
-        opacity: 0.6; 
+        opacity: 0.6;
     } 
 }
 
+//Removing the default style of the input boxes and positioning it.
 input {
     opacity: 1 !important;
     background-color: transparent;
