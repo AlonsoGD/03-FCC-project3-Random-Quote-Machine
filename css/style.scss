@@ -42,13 +42,35 @@ body {
     border: 5px solid #3D3B3B;
     box-shadow: 0px 0px 0px 9px $caseColor;
     border-radius: 1px;
-
-
+    
+    
     .pcbaseleft {
         float: left;
         width: ($pccaseWidth + 200px) / 2;
         height: ($pccaseHeight / 3.5);
     }
+
+    .logo {
+        float: left;
+        height: ($pccaseHeight / 3.5) - 30px;
+        padding: 10px 20px 20px 10px;
+        font-size: 50pt;
+        font-weight: bold;
+    }
+
+    .onoffbutton {
+        background-color: yellow;
+        width: 100px;
+        margin: auto;
+        height: ($pccaseHeight / 3.5) / 2; 
+        float:right;
+    }
+
+    .onoffled {
+        background-color: green;
+        float:right;
+    }
+
     .pcbaseright {
         @extend .pcbaseleft;
         float: right;
@@ -81,6 +103,7 @@ body {
             border-radius: 10px;
         }
     }
+
 }
 
 .screen {

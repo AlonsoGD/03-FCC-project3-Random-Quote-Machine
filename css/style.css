@@ -35,6 +35,21 @@ body {
     float: left;
     width: 425px;
     height: 171.4285714286px; }
+  .cpu .logo {
+    float: left;
+    height: 141.4285714286px;
+    padding: 10px 20px 20px 10px;
+    font-size: 50pt;
+    font-weight: bold; }
+  .cpu .onoffbutton {
+    background-color: yellow;
+    width: 100px;
+    margin: auto;
+    height: 85.7142857143px;
+    float: right; }
+  .cpu .onoffled {
+    background-color: green;
+    float: right; }
   .cpu .pcbaseright {
     float: right; }
   .cpu .disquette {
