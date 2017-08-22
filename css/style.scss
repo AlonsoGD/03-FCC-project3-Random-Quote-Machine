@@ -59,11 +59,13 @@ body {
     }
 
     .onoffbutton {
-        background-color: yellow;
-        width: 100px;
-        margin: auto;
-        height: ($pccaseHeight / 3.5) / 2; 
         float:right;
+        background-color: yellow;
+        width: ($pccaseHeight / 3.5) / 2; 
+        height: ($pccaseHeight / 3.5) / 2; 
+        margin: 20px 35px 0px 0px;
+
+        border-radius: 50%;
     }
 
     .onoffled {

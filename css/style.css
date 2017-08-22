@@ -42,11 +42,12 @@ body {
     font-size: 50pt;
     font-weight: bold; }
   .cpu .onoffbutton {
+    float: right;
     background-color: yellow;
-    width: 100px;
-    margin: auto;
+    width: 85.7142857143px;
     height: 85.7142857143px;
-    float: right; }
+    margin: 20px 35px 0px 0px;
+    border-radius: 50%; }
   .cpu .onoffled {
     background-color: green;
     float: right; }
