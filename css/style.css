@@ -43,14 +43,33 @@ body {
     font-weight: bold; }
   .cpu .onoffbutton {
     float: right;
-    background-color: yellow;
     width: 85.7142857143px;
     height: 85.7142857143px;
-    margin: 20px 35px 0px 0px;
+    margin: 15px 35px 0px 0px;
+    border: 1px solid black;
     border-radius: 50%; }
+    .cpu .onoffbutton .innercircle {
+      width: 50%;
+      height: 50%;
+      margin: 10px 25px 10px 10px;
+      border: 12px solid black;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 60pt; }
+    .cpu .onoffbutton .innerline {
+      background-color: black;
+      width: 10px;
+      height: 60px;
+      margin: auto;
+      margin-top: -30px;
+      border-radius: 50%; }
   .cpu .onoffled {
-    background-color: green;
-    float: right; }
+    background-color: #05E905;
+    float: right;
+    margin: 20px 54px 20px 30px;
+    width: 50px;
+    height: 15px;
+    border: 1px solid #000000; }
   .cpu .pcbaseright {
     float: right; }
   .cpu .disquette {
