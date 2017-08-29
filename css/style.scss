@@ -31,6 +31,31 @@ body {
     border: 5px solid #3D3B3B;
     box-shadow: 0px 0px 0px 10px $caseColor;
     border-radius: 5px;
+    
+    .pccaselower {
+        //background-color: white;
+        height: 80px;
+        margin: 10px 0px 10px 0px;
+        padding: 15px 20px 20px 10px;
+        border-top: 5px solid #3D3B3B;
+        font-size: 50pt;
+        font-weight: bold;
+    }
+}
+
+.screen {
+    height: $pccaseHeight - 150px;
+    margin: 35px 35px 0px 35px;
+    border: 3px solid #222121;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 10px 10px #000;
+
+    .screentext {
+        color: #00FE1A;
+        margin: 20px 30px;
+        text-shadow: 0px 0px 10px #FFFFFF;
+        opacity: 0.6;
+    } 
 }
 
 .cpu {
@@ -130,21 +155,6 @@ body {
 
 }
 
-.screen {
-    height: $pccaseHeight - 150px;
-    margin: 35px;
-
-    border: 3px solid #222121;
-    border-radius: 20px;
-    box-shadow: inset 0px 0px 10px 10px #000;
-
-    .screentext {
-        color: #00FE1A;
-        margin: 20px 30px;
-        text-shadow: 0px 0px 10px #FFFFFF;
-        opacity: 0.6;
-    } 
-}
 
 //Removing the default style of the input boxes and positioning it.
 input {
