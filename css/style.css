@@ -29,6 +29,27 @@ body {
     border-top: 5px solid #3D3B3B;
     font-size: 50pt;
     font-weight: bold; }
+    .pccase .pccaselower .pccaseonoffbutton, .cpu .pccaselower .pccaseonoffbutton {
+      float: right;
+      width: 50px;
+      height: 50px;
+      margin: 5px 35px 0px 0px;
+      border: 3px solid black;
+      border-radius: 50%; }
+    .pccase .pccaselower .innercirclecase, .cpu .pccaselower .innercirclecase {
+      background-color: gray;
+      width: 50%;
+      height: 50%;
+      margin: 7px 5px 5px 8px;
+      border: 5px solid black;
+      border-radius: 50%; }
+    .pccase .pccaselower .innerlinecase, .cpu .pccaselower .innerlinecase {
+      background-color: black;
+      width: 3px;
+      height: 40px;
+      margin: auto;
+      margin-top: -20px;
+      border-radius: 50%; }
 
 .screen {
   height: 450px;
@@ -83,7 +104,7 @@ body {
       margin-top: -30px;
       border-radius: 50%; }
   .cpu .onoffled {
-    background-color: #05E905;
+    background-color: gray;
     float: right;
     margin: 20px 54px 20px 30px;
     width: 50px;
